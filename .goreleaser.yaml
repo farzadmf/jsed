@@ -16,7 +16,7 @@ universal_binaries:
 - replace: true
 
 brews:
-- name: mediumautopost
+- name: jsed
   homepage: https://github.com/farzadmf/jsed
   description: command line JSON editor
   tap:
