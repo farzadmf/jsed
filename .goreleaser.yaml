@@ -1,0 +1,30 @@
+builds:
+- binary: jsed
+  goos:
+  - darwin
+  - linux
+  goarch:
+  - amd64
+  - arm64
+  env:
+  - CGO_ENABLED=0
+
+release:
+  prerelease: auto
+
+universal_binaries:
+- replace: true
+
+brews:
+- name: mediumautopost
+  homepage: https://github.com/farzadmf/jsed
+  description: command line JSON editor
+  tap:
+    owner: farzadmf
+    name: homebrew-tap
+  commit_author:
+    name: farzadmf
+    email: farzadmf@users.noreply.github.com
+
+checksum:
+  name_template: checksums.txt
